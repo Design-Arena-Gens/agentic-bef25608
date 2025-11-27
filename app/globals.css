@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050505;
+  --surface: #121212;
+  --text-primary: #EDEDED;
+  --text-secondary: #888888;
+  --accent-glow: #00D1FF;
+  --accent-secondary: #FFFFFF;
+}
+
+html, body {
+  height: 100%;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+::selection {
+  background: rgba(0, 209, 255, 0.35);
+  color: #fff;
+}
+
+.prose-title {
+  @apply font-display tracking-tight;
+  letter-spacing: -0.02em;
+}
+
+.prose-subtle {
+  color: var(--text-secondary);
+}
+
+.accent-ring {
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 0 24px rgba(0, 209, 255, 0.2);
+}
